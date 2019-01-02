@@ -1,13 +1,13 @@
-package com.imooc.product.provider.controller;
+package com.imooc.product.consumer.controller;
 
 
-import com.imooc.product.provider.VO.ProductInfoVO;
-import com.imooc.product.provider.VO.ProductVO;
-import com.imooc.product.provider.dataobject.ProductCategory;
-import com.imooc.product.provider.dataobject.ProductInfo;
-import com.imooc.product.provider.dto.CartDTO;
-import com.imooc.product.provider.service.CategoryService;
-import com.imooc.product.provider.service.ProductService;
+import com.imooc.product.consumer.VO.ProductInfoVO;
+import com.imooc.product.consumer.VO.ProductVO;
+import com.imooc.product.consumer.dataobject.ProductCategory;
+import com.imooc.product.consumer.dataobject.ProductInfo;
+import com.imooc.product.consumer.dto.CartDTO;
+import com.imooc.product.consumer.service.CategoryService;
+import com.imooc.product.consumer.service.ProductService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

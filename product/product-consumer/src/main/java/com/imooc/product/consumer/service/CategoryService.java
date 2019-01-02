@@ -1,7 +1,7 @@
-package com.imooc.product.provider.service;
+package com.imooc.product.consumer.service;
 
 
-import com.imooc.product.provider.dataobject.ProductCategory;
+import com.imooc.product.consumer.dataobject.ProductCategory;
 
 import java.util.List;
 

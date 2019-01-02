@@ -1,4 +1,4 @@
-package com.imooc.product.provider;
+package com.imooc.product.consumer;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

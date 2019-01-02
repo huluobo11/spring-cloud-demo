@@ -1,4 +1,4 @@
-package com.imooc.product.provider.dataobject;
+package com.imooc.product.consumer.dataobject;
 
 import lombok.Data;
 

@@ -1,13 +1,13 @@
-package com.imooc.product.provider.service.impl;
+package com.imooc.product.consumer.service.impl;
 
 
 import com.imooc.product.common.enums.ProductStatusEnum;
 import com.imooc.product.common.enums.ResultEnum;
 import com.imooc.product.common.exception.ProductException;
-import com.imooc.product.provider.dataobject.ProductInfo;
-import com.imooc.product.provider.dto.CartDTO;
-import com.imooc.product.provider.repository.ProductInfoRepository;
-import com.imooc.product.provider.service.ProductService;
+import com.imooc.product.consumer.dataobject.ProductInfo;
+import com.imooc.product.consumer.dto.CartDTO;
+import com.imooc.product.consumer.repository.ProductInfoRepository;
+import com.imooc.product.consumer.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;

@@ -1,4 +1,4 @@
-package com.imooc.product.provider.dto;
+package com.imooc.product.consumer.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
