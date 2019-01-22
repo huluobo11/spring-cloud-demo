@@ -13,6 +13,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
 import javax.transaction.Transactional;
+import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -48,6 +50,7 @@ public class ProductServiceImpl implements ProductService {
                     throw new ProductException(ResultEnum.PRODUCT_STOCK_ERROR);
                 }
                 productInfo.setProductStock(result);
+                productInfo.setUpdateTime(new Date());
                 productInfoRepository.save(productInfo);
             });
         }

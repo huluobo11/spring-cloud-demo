@@ -13,22 +13,22 @@ import java.util.List;
 public class OrderForm {
 
     private String orderId;
-    @NotBlank
+    @NotBlank(message = "name不能为空")
     @JsonProperty("name")
     private String buyerName;
-    @NotBlank
+    @NotBlank(message = "phone不能为空")
     @JsonProperty("phone")
     private String buyerPhone;
-    @NotBlank
+    @NotBlank(message = "address不能为空")
     @JsonProperty("address")
     private String buyerAddress;
-    @NotBlank
+    @NotBlank(message = "openid不能为空")
     @JsonProperty("openid")
     private String buyerOpenid;
     private BigDecimal orderAmount;
     private Integer orderStatus;
     private Integer payStatus;
-    @NotEmpty
+    @NotEmpty(message = "items不能为空")
     @JsonProperty("items")
     private List<OrderDetail> orderDetailList;
 }

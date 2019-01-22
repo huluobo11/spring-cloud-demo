@@ -20,3 +20,7 @@ server:
 feign:
   hystrix:
     enabled: false
+#txmanager地址
+tm:
+  manager:
+    url: http://127.0.0.1:8899/tx/manager/
