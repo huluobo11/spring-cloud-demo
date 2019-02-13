@@ -1,9 +1,8 @@
 package com.imooc.order.provider;
 
-import com.imooc.order.provider.converter.OrderForm2OrderDTO;
-import com.imooc.order.provider.dto.OrderDTO;
-import com.imooc.order.provider.form.OrderForm;
-import org.junit.Test;
+import com.imooc.order.consumer.converter.OrderForm2OrderDTO;
+import com.imooc.order.consumer.dto.OrderDTO;
+import com.imooc.order.consumer.form.OrderForm;
 
 public class MapTest {
 
