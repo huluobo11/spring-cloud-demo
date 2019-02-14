@@ -9,7 +9,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @EnableDiscoveryClient
 public class OrderConsumerApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(OrderConsumerApplication.class, args);
     }

@@ -1,0 +1,21 @@
+# spring:
+#   application:
+#     name: order
+#   datasource:
+#     url: jdbc:mysql://127.0.0.1/SpringCloud_order?characterEncoding=utf-8&useSSL=false
+#     driver-class-name: com.mysql.jdbc.Driver
+#     username: root
+#     password: root
+#   jpa:
+#     show-sql: true
+#   http:
+#     encoding:
+#       charset: utf-8
+# server:
+#   port: 8083
+# feign:
+#   hystrix:
+#     enabled: false
+#
+# 可以将order-dev.yml 和 order-test.yml文件的相同的配置内容放在该文件中。
+# 因为，每次加载dev或者test文件时，都会和该文件进行合并。

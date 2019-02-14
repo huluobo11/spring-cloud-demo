@@ -7,8 +7,14 @@ spring:
         enabled: true
         service-id: config-server
       profile: dev
+  rabbitmq:
+    host: 119.29.243.22
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

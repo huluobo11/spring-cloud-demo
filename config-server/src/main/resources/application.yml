@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: config-server
+  http:
+    encoding:
+      charset: utf-8
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/huluobo11/spring-cloud-demo-config-repo.git
+          username: 15136129644@139.com
+          password: guai1174963032
+          basedir: D:\java\gitRepo\spring-cloud-demo\config-server\basedir\
+    bus:
+      trace:
+        enabled: true
+  rabbitmq:
+    host: 119.29.243.22
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8084
+feign:
+  hystrix:
+    enabled: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

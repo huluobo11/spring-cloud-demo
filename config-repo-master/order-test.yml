@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: order
+  datasource:
+    url: jdbc:mysql://127.0.0.1/SpringCloud_order?characterEncoding=utf-8&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+  http:
+    encoding:
+      charset: utf-8
+server:
+  port: 8083
+feign:
+  hystrix:
+    enabled: false
+env: test
