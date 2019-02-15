@@ -16,4 +16,4 @@ server:
 feign:
   hystrix:
     enabled: false
-env: dev99
+env: dev90
