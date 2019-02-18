@@ -7,6 +7,8 @@ spring:
     username: root
     password: root
     type: com.alibaba.druid.pool.DruidDataSource
+  rabbitmq:
+    host: 119.29.243.22
   jpa:
     show-sql: true
   http:
@@ -17,5 +19,10 @@ server:
 feign:
   hystrix:
     enabled: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 env: dev15
 
