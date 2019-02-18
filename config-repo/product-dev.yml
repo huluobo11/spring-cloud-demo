@@ -8,6 +8,8 @@ spring:
     password: root
   jpa:
     show-sql: true
+  rabbitmq:
+    host: 119.29.243.22
   http:
     encoding:
       charset: utf-8
