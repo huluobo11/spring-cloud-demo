@@ -6,6 +6,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: root
+    type: com.alibaba.druid.pool.DruidDataSource
   jpa:
     show-sql: true
   http:
@@ -17,3 +18,4 @@ feign:
   hystrix:
     enabled: false
 env: dev5
+
