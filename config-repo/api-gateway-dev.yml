@@ -11,5 +11,5 @@ zuul:
 #下面和上面作用一样
     product: /myProject/**
 #排除某些路由
-  ignored-patterns:
-    - /**/product/list
+#   ignored-patterns:
+#     - /**/product/list
