@@ -1,0 +1,15 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+zuul:
+  routes:
+#    myProject:
+#      path: /myProject/**
+#      serviceId: product
+#下面和上面作用一样
+    product: /myProject/**
+#排除某些路由
+  ignored-patterns:
+    - /**/product/list
