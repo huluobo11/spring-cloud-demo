@@ -4,6 +4,8 @@ management:
       exposure:
         include: "*"
 zuul:
+#将敏感头部设置为空，允许所有服务操作cookie
+  sensitive-headers: 
   routes:
 #    myProject:
 #      path: /myProject/**
