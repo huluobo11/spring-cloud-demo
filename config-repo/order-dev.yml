@@ -18,6 +18,15 @@ spring:
 feign:
   hystrix:
     enabled: false
+server:
+  port: 8083
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
 management:
   endpoints:
     web:
