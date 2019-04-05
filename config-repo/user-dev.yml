@@ -1,12 +1,10 @@
 spring:
   datasource:
-    url: jdbc:mysql://127.0.0.1/SpringCloud_order?characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    url: jdbc:mysql://127.0.0.1/SpringCloud_user?characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: root
     type: com.alibaba.druid.pool.DruidDataSource
-  rabbitmq:
-    host: 119.29.243.22
   redis:
     host: 119.29.243.22
     port: 6379
@@ -18,19 +16,8 @@ spring:
 feign:
   hystrix:
     enabled: false
-server:
-  port: 8083
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 3000
 management:
   endpoints:
     web:
       exposure:
         include: "*"
-env: dev15
-

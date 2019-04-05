@@ -1,18 +1,16 @@
 spring:
-  application:
-    name: product
   datasource:
-    url: jdbc:mysql://127.0.0.1/SpringCloud_product?characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://127.0.0.1/SpringCloud_product?characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: root
   jpa:
     show-sql: true
+  rabbitmq:
+    host: 119.29.243.22
   http:
     encoding:
       charset: utf-8
-server:
-  port: 8082
 feign:
   hystrix:
     enabled: false

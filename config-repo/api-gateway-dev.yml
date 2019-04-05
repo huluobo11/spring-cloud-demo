@@ -1,0 +1,21 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+zuul:
+#将敏感头部设置为空，允许所有服务操作cookie
+  sensitive-headers: 
+  routes:
+#    myProject:
+#      path: /myProject/**
+#      serviceId: product
+#下面和上面作用一样
+    product: /myProject/**
+#排除某些路由
+#   ignored-patterns:
+#     - /**/product/list
+spring:
+  redis:
+    port: 6379
+    host: 119.29.243.22
