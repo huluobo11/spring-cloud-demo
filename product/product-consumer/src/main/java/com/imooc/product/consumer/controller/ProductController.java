@@ -1,11 +1,11 @@
 package com.imooc.product.consumer.controller;
 
 
+import com.imooc.product.common.dto.DecreaseStockInput;
 import com.imooc.product.consumer.VO.ProductInfoVO;
 import com.imooc.product.consumer.VO.ProductVO;
 import com.imooc.product.consumer.dataobject.ProductCategory;
 import com.imooc.product.consumer.dataobject.ProductInfo;
-import com.imooc.product.consumer.dto.CartDTO;
 import com.imooc.product.consumer.service.CategoryService;
 import com.imooc.product.consumer.service.ProductService;
 import org.springframework.beans.BeanUtils;
@@ -68,7 +68,7 @@ public class ProductController {
     }
 
     @PostMapping("decreaseStock")
-    public void decreaseStock(@RequestBody List<CartDTO> cartDTOList){
+    public void decreaseStock(@RequestBody List<DecreaseStockInput> cartDTOList){
         productService.decreaseStock(cartDTOList);
     }
 }

@@ -8,10 +8,11 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/huluobo11/spring-cloud-demo-config-repo.git
+          uri: https://github.com/huluobo11/spring-cloud-demo.git
           username: 15136129644@139.com
           password: guai1174963032
-          basedir: D:\java\gitRepo\spring-cloud-demo\config-server\basedir\
+          search-paths: config-repo
+          force-pull: true
     bus:
       trace:
         enabled: true
@@ -31,3 +32,6 @@ management:
     web:
       exposure:
         include: "*"
+logging:
+  level:
+    root: info

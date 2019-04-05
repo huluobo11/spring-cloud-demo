@@ -13,7 +13,7 @@
     <modules>
         <module>order-common</module>
         <module>order-consumer</module>
-        <module>order-producer</module>
+        <module>order-provider</module>
     </modules>
 
     <parent>

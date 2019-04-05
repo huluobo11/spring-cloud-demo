@@ -14,5 +14,5 @@ public interface OrderDTO2OOrderMaster {
 
     OrderMaster from(OrderDTO orderDTO);
 
-    OrderDTO from(OrderForm orderForm);
+    OrderDTO to(OrderMaster orderMaster);
 }

@@ -34,7 +34,7 @@ public class OrderController {
      */
     @PostMapping("/create")
     public Result createOrder(@Valid @RequestBody OrderForm orderForm,
-                                    BindingResult bindingResult) throws Exception {
+                                    BindingResult bindingResult) {
         // 1、参数校验
         if (bindingResult.hasErrors()) {
             log.error("【创建订单】参数不正确,orderForm={}", orderForm);
@@ -49,4 +49,8 @@ public class OrderController {
         return Result.success(hashMap);
     }
 
+    @PostMapping("/finish")
+    public Result finish(String orderId) {
+        return Result.success(orderService.finishOrder(orderId));
+    }
 }
